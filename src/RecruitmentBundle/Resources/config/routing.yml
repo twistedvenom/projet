@@ -1,0 +1,76 @@
+recruitment_homepage:
+    path:     /
+    defaults: { _controller: RecruitmentBundle:Default:index }
+seller_add:
+    path: /addseller
+    defaults: {_controller: RecruitmentBundle:Seller:AddSeller}
+list_seller:
+    path: /listseller
+    defaults: {_controller: RecruitmentBundle:Seller:ListSeller}
+delete_seller:
+    path: /deleteseller/{id}
+    defaults: {_controller: RecruitmentBundle:Seller:DeleteSeller}
+update_seller:
+    path: /updateseller/{id}
+    defaults: {_controller: RecruitmentBundle:Seller:UpdateSeller}
+professional_add:
+    path: /addprofessional
+    defaults: {_controller: RecruitmentBundle:Professional:AddPro}
+list_professional:
+    path: /listprofessional
+    defaults: {_controller: RecruitmentBundle:Professional:ListPro}
+delete_professional:
+    path: /deleteprofessional/{id}
+    defaults: {_controller: RecruitmentBundle:Professional:DeletePro}
+update_professional:
+    path: /updateprofessional/{id}
+    defaults: {_controller: RecruitmentBundle:Professional:UpdatePro}
+
+question_index:
+    path:     /
+    defaults: { _controller: RecruitmentBundle:Question:index }
+    methods:  GET
+
+question_show:
+    path:     /question/{id}/show
+    defaults: { _controller: RecruitmentBundle:Question:show }
+
+
+question_new:
+    path:     /question/new
+    defaults: { _controller: RecruitmentBundle:Question:new }
+
+
+question_edit:
+    path:     /question/{id}/edit
+    defaults: { _controller: RecruitmentBundle:Question:edit }
+
+
+question_delete:
+    path:     /question/{id}/delete
+    defaults: { _controller: RecruitmentBundle:Question:delete }
+
+
+proposition_index:
+    path:     /proposition
+    defaults: { _controller: RecruitmentBundle:Proposition:index }
+
+
+proposition_show:
+    path:     /proposition/{id}/show
+    defaults: { _controller: RecruitmentBundle:Proposition:show }
+
+
+proposition_new:
+    path:     /proposition/new/{id}
+    defaults: { _controller: RecruitmentBundle:Proposition:new }
+
+
+proposition_edit:
+    path:     /proposition/{id}/edit
+    defaults: { _controller: RecruitmentBundle:Proposition:edit }
+
+
+proposition_delete:
+    path:     /proposition/{id}/delete
+    defaults: { _controller: RecruitmentBundle:Proposition:delete }
